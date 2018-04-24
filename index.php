@@ -60,11 +60,27 @@ if(isset($_POST['name'])){
 ?>
 	<!-- <div class="main"> -->
 
-
-<div class="header">
+<header class="header">
 	<div class="square">
 	<h1>TRACEY GALLOWAY</h1>
 </div>
+</header>
+
+<div class="aboutSec">
+	<div class="aboutInfo">
+		<h2>About Tracey</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="aboutPic">
+		<img src="images/mountain3.png" alt="">
+	</div>
+</div>
+
+<div class="researchSec">
+<h2>RESEARCH</h2>
+<div class="whiteLine">
+</div>
+<p>Lorem ipsum dolor sit amet, sit ne populo bonorum definitiones, civibus indoctum sit no. Mei ad nostro blandit quaestio, eum ancillae gubergren ne. Et ius platonem maluisset. No vel amet gubergren urbanitas, decore feugiat albucius ius in, posse dicit deseruisse cum cu.Lorem ipsum dolor sit amet, sit ne populo bonorum definitiones, civibus indoctum sit no. Mei ad nostro blandit quaestio, eum ancillae gubergren ne. Et ius platonem maluisset. No vel amet gubergren urbanitas, decore feugiat albucius ius in, posse dicit deseruisse cum cu</p>
 </div>
 
 <div class="mainPosts">
