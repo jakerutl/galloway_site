@@ -1,0 +1,203 @@
+body{
+  background-color: #dee3e5;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0;
+  /* width: 100%; */
+}
+
+
+.panel{
+  position: fixed;
+  width: 30%;
+  float: left;
+  min-height: 1000px;
+  background-color: #2d2d2d;
+  color: white;
+  box-shadow: 8px 0 12px -1px rgba(0, 0, 0, 0.2);
+
+}
+
+.controls{
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.controls a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+
+.AdminPg{
+  font-size: 25px;
+  margin-left: 50px;
+  padding-top: 50px;
+  color: #B80000;
+  text-decoration: underline;
+}
+
+.delLeft{
+  width: 70%;
+  float: right;
+}
+
+.list{
+width: 500px;
+margin: 0 auto;
+position: relative;
+top: 100px;
+background-color: #dee3e5;
+padding: 8px;
+border: solid #B80000 2px;
+/* border-radius: 5px; */
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom: 100px;
+
+}
+
+.list h3{
+  margin: 0;
+  margin-left: 0;
+  float: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.list a{
+  margin: 0;
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 7px;
+  transition: 0.2s;
+  cursor:pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.list a:hover{
+  background-color: white;
+  color: #2d2d2d;
+}
+
+.delPage{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.editPage{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.createPage{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.posts{
+width: 50%;
+margin: 0 auto;
+margin-top: 100px;
+}
+
+.editDiv{
+  padding-top: 40px;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* border-radius: 10px; */
+  background-color: #dee3e5;
+  border: solid #B80000 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.editLabels{
+  color: black;
+  font: 14px Helvetica, Arial;
+  float: left;
+  margin-left: 25px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.editInput{
+  float: right;
+  margin-right: 25px;
+  padding: 3px;
+  /* border-radius: 5px; */
+}
+
+#saveUser {
+  /* margin-top: 30px; */
+  float: left;
+  margin-left: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 7px;
+  transition: 0.2s;
+  cursor:pointer;
+}
+
+#saveUser:hover{
+  background-color: white;
+  float: left;
+  margin-left: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d2d2d;
+  padding: 7px;
+  cursor:pointer;
+}
+
+.lvl {
+  float: right;
+  margin-right: 25px;
+  border-radius: 0px;
+}
+
+#createUser{
+  float: left;
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 7px;
+  transition: 0.2s;
+  cursor:pointer;
+}
+
+
+#createUser:hover{
+  background-color: white;
+  float: left;
+  margin-left: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d2d2d;
+  padding: 7px;
+  cursor:pointer;
+}
+
+.posts h3{
+  font-size: 18px;
+  font-weight: bold;
+}

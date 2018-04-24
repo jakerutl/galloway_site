@@ -1,0 +1,134 @@
+body{
+  background-color: #2d2d2d;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.navigation{
+  width: 250px;
+  /* margin: 0 auto; */
+}
+
+.navigation a{
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      /* display:inline-block; */
+      height: 15px;
+      line-height:65px;
+      padding:0px 15px;
+      text-decoration:none;
+      transition: color 0.3s ease-in;
+      margin-bottom: 50px;
+      cursor: pointer;
+    }
+
+.navigation ul li{
+    /* display: inline; */
+  }
+
+.navigation a:hover{
+  color: #2d2d2d;
+}
+
+.log{
+  /* float: right; */
+  bottom: 50px;
+  position: absolute;
+}
+
+.navCon{
+  font-family:"Arial";
+  width: 250px;
+  min-height: 1000px;
+  float: right;
+  background-color: #44494e;
+  position: fixed;
+  right: 0;
+}
+
+.main{
+  width: 960px;
+  margin: 0 auto;
+  font-family:"Arial";
+  color: white;
+  padding-top: 150px;
+
+}
+
+.mainPosts{
+width: 960px;
+color: white;
+margin: 0 auto;
+/* border: solid #B80000 2px; */
+padding: 15px;
+}
+
+.mainPosts h2{
+  font-weight: bold;
+  font-size: 18px;
+}
+.mainPosts p{
+margin-bottom: 50px;
+}
+
+.parallax{
+  background-image: url(../images/mountain1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
+  width: 100%;
+}
+
+.parallax2{
+  background-image: url(../images/mountain2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+
+.header{
+    background-image: url("../images/background.png");
+    background-size: cover;
+    /* position: absolute; */
+    left: 1834px;
+    top: 0px;
+    width: 100%;
+    height: 620px;
+    z-index: 63;
+  }
+
+
+
+.header h1 {
+  font-size: 68px;
+  font-family: "Helvetica";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  left: 2066px;
+  margin-top: 15px;
+  z-index: 69;
+}
+
+.square{
+  border-width: 11px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  position: absolute;
+  left: 25%;
+  top: 240px;
+  width: 763px;
+  height: 112px;
+  z-index: 65;
+}
