@@ -13,6 +13,34 @@
 		mysqli_close($link);
 	}
 
+	function getRand($tbl) {
+		include('connect.php');
+		$queryAll = "SELECT * FROM {$tbl} ORDER BY RAND() LIMIT 0,1";
+		$runAll = mysqli_query($link, $queryAll);
+		if($runAll){
+			return $runAll;
+		}else{
+			$error = "There was a problem accessing this information.  Sorry about your luck ;)";
+			return $error;
+		}
+		mysqli_close($link);
+	}
+
+	function getStuRand($tbl) {
+		include('connect.php');
+		$queryAll = "SELECT * FROM {$tbl} ORDER BY RAND() LIMIT 0,1";
+		$runAll = mysqli_query($link, $queryAll);
+		if($runAll){
+			return $runAll;
+		}else{
+			$error = "There was a problem accessing this information.  Sorry about your luck ;)";
+			return $error;
+		}
+		mysqli_close($link);
+	}
+
+
+
 	function getSingle($tbl, $col, $id) {
 		include('connect.php');
 		$querySingle = "SELECT * FROM {$tbl} WHERE {$col} = {$id}";

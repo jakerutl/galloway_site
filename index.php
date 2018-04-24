@@ -7,15 +7,12 @@
 	// confirm_logged_in();
 
 $tbl = "tbl_post";
-$posts = getAll($tbl);
+$posts = getRand($tbl);
+?>
 
-if(isset($_POST['submit'])){
-  $title = $_POST['title'];
-  $story = $_POST['story'];
-  $release = $_POST['release'];
-  $result = addPost($title, $story, $release);
-  $message = $result;
-}
+<?php
+$tbl = "tbl_studentPost";
+$student = getStuRand($tbl);
 ?>
 
 <?php
@@ -51,8 +48,8 @@ if(isset($_POST['name'])){
 <head>
 <meta charset="UTF-8">
 <title>Welcome to my site</title>
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php
@@ -83,51 +80,69 @@ if(isset($_POST['name'])){
 <p>Lorem ipsum dolor sit amet, sit ne populo bonorum definitiones, civibus indoctum sit no. Mei ad nostro blandit quaestio, eum ancillae gubergren ne. Et ius platonem maluisset. No vel amet gubergren urbanitas, decore feugiat albucius ius in, posse dicit deseruisse cum cu.Lorem ipsum dolor sit amet, sit ne populo bonorum definitiones, civibus indoctum sit no. Mei ad nostro blandit quaestio, eum ancillae gubergren ne. Et ius platonem maluisset. No vel amet gubergren urbanitas, decore feugiat albucius ius in, posse dicit deseruisse cum cu</p>
 </div>
 
-<div class="mainPosts">
-<?php
-	while($row = mysqli_fetch_array($posts)){
-		echo "<h2>{$row['post_title']} </h2><p>{$row['post_desc']}</p> <h3><a href=\"//".$row['post_target']."\" target=\"_blank\">{$row['post_target']}</a></h3>";
+<div class="newsSec">
+	<div class="newsInfo">
+		<h2 class="newsTitle">STAY UP TO DATE</h2>
+		<div class="text">
+		<?php
+		while($row = mysqli_fetch_array($posts)){
+		echo "<h3>{$row['post_title']}</h3><br><br><p class=\"newsDesc\">{$row['post_desc']}</p><br><h4><a class=\"linkWork\" href=\"//".$row['post_target']."\" target=\"_blank\">{$row['post_target']}</a></h4>";
 	}
-	?>
-	</div>
-
-	<div class="mainPosts">
-<h2>Student posts</h2>
-<br>
-<br>
-	<?php
-		while($row = mysqli_fetch_array($s_posts)){
-			echo "<h2>{$row['s_post_title']} </h2><p>{$row['s_post_desc']}</p> <h3><a href=\"//".$row['s_post_target']."\" target=\"_blank\">{$row['s_post_target']}</a></h3>";
-		}
 		?>
+	</div>
+		<div class="More">
+			<a href="#" class="seeMore" >SEE MORE</a>
+		</div>
+	</div>
+	<div class="newsPic">
+		<img src="images/mountain1.png" alt="">
+	</div>
 </div>
 
-<form id="contact" action="contact.php" method="post">
+<div class="studentSec">
+	<div class="title">
+		<h2>SEE WHAT THEY'RE DOING!</h2>
+	</div>
+	<div class="whiteLine"></div>
+	<?php
+	while($row = mysqli_fetch_array($student)){
+	echo "<h3>{$row['s_post_title']}</h3><br><br><p>{$row['s_post_desc']}</p><br><h4><a class=\"linkWork\" href=\"//".$row['s_post_target']."\" target=\"_blank\">{$row['s_post_target']}</a></h4>";
+}
+	?>
+	<div class="More">
+		<a href="#" class="seeMore" >SEE MORE</a>
+	</div>
+</div>
 
-<fieldset>
-  <input placeholder="Name..." type="text" tabindex="1" name="name" required>
-</fieldset>
+<div class="contactForm">
+	<h2>Write me an Email!</h2>
+	<form id="contact" action="contact.php" method="post">
 
-<fieldset>
-  <input placeholder="Email..." type="email" name="email" tabindex="2" required>
-</fieldset>
+		<fieldset class="inputCon">
+  		<input placeholder="Name..." type="text" tabindex="1" name="name" required>
+		</fieldset>
 
-<fieldset>
-  <input placeholder="Phone (optional)..." type="tel" name="phone" tabindex="3">
-</fieldset>
+		<fieldset class="inputCon">
+  		<input placeholder="Email..." type="email" name="email" tabindex="2" required>
+		</fieldset>
 
-<fieldset>
-  <textarea placeholder="Your Message..." tabindex="5" name="message" required></textarea>
-</fieldset>
+		<fieldset class="inputCon">
+  		<input placeholder="Phone (optional)..." type="tel" name="phone" tabindex="3">
+		</fieldset>
 
-<fieldset>
-  <input class="street" placeholder="Street" type="text" name="street" autocomplete="off">
-</fieldset>
+		<fieldset class="desc">
+  		<textarea placeholder="Your Message..." tabindex="5" name="message" required></textarea>
+		</fieldset>
 
-<fieldset>
-  <button name="submit" value="Send" type="submit" id="contact-submit">SEND</button>
-</fieldset>
+		<fieldset>
+  		<input class="street" placeholder="Street" type="text" name="street" autocomplete="off">
+		</fieldset>
+
+		<fieldset>
+  		<button name="submit" value="Send" type="submit" id="contact-submit">SEND</button>
+		</fieldset>
 </form>
+</div>
 
 
 <!-- <?php
