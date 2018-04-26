@@ -115,32 +115,37 @@ if(isset($_POST['name'])){
 </div>
 
 <div class="contactForm">
-	<h2>Write me an Email!</h2>
 	<form id="contact" action="contact.php" method="post">
+<div class="inputCon">
 
-		<fieldset class="inputCon">
-  		<input placeholder="Name..." type="text" tabindex="1" name="name" required>
+	<h2>Write me an Email!</h2>
+		<fieldset>
+			<label>Name</label>
+  		<input placeholder="" type="text" tabindex="1" name="name" required>
 		</fieldset>
 
-		<fieldset class="inputCon">
-  		<input placeholder="Email..." type="email" name="email" tabindex="2" required>
+		<fieldset >
+			<label>Email</label>
+  		<input placeholder="" type="email" name="email" tabindex="2" required>
 		</fieldset>
 
-		<fieldset class="inputCon">
-  		<input placeholder="Phone (optional)..." type="tel" name="phone" tabindex="3">
+		<fieldset>
+			<label>Phone (optional)</label>
+  		<input placeholder=" " type="tel" name="phone" tabindex="3">
 		</fieldset>
+	</div>
 
-		<fieldset class="desc">
-  		<textarea placeholder="Your Message..." tabindex="5" name="message" required></textarea>
+	<div class="desc">
+		<fieldset class="messenger">
+			<label>Message</label>
+  		<textarea placeholder="Write your message here.." tabindex="5" name="message" required></textarea>
 		</fieldset>
-
 		<fieldset>
   		<input class="street" placeholder="Street" type="text" name="street" autocomplete="off">
 		</fieldset>
 
-		<fieldset>
-  		<button name="submit" value="Send" type="submit" id="contact-submit">SEND</button>
-		</fieldset>
+		<button name="submit" value="Send" type="submit" class="submit">SEND</button>
+	</div>
 </form>
 </div>
 
